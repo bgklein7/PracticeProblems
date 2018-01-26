@@ -176,52 +176,52 @@ namespace PracticeProblems
             //    Console.WriteLine("odd");
             //}
 
-            //    //method which uses two user inputs and returns the greatest. Use loop to receive user input.
-            //    int[] userInput = new int[2];
+            //method which uses two user inputs and returns the greatest. Use loop to receive user input.
+            int[] userInput = new int[2];
 
-            //    for (int i = 0; i < userInput.Length; i++)
-            //    {
-            //        Console.WriteLine("Please enter a number");
-            //        userInput[i] = int.Parse(Console.ReadLine());
-            //    }
-
-            //    int greatest = Great(userInput[1], userInput[2]);
-
-            //    Console.WriteLine(greatest);
-            //}
-            //static int Great(int numOne, int numTwo)
-            //{
-            //    if (numOne < numTwo) { return numTwo; }
-            //    else { return numOne; }
-
-            //}
-
-            //2 Method which uses two user inputs and returns if they are equal. Use a loop to receive user input.
-            int[] user2Input = new int[2];
-
-            for (int i = 0; i < user2Input.Length; i++)
+            for (int i = 0; i < userInput.Length; i++)
             {
                 Console.WriteLine("Please enter a number");
-                user2Input[i] = int.Parse(Console.ReadLine());
+                userInput[i] = int.Parse(Console.ReadLine());
             }
 
-            bool result = Equality(user2Input[1], user2Input[2]);
+            int greatest = Great(userInput[0], userInput[1]);
 
-            Console.WriteLine(result);
+            Console.WriteLine(greatest);
+        }
+        static int Great(int numOne, int numTwo)
+        {
+            if (numOne < numTwo) { return numTwo; }
+            else { return numOne; }
 
         }
 
-        static bool Equality(int inputOne, int inputTwo)
-        {
-            bool inputs;
+        ////2 Method which uses two user inputs and returns if they are equal. Use a loop to receive user input.
+        //int[] userTwoInput = new int[2];
 
-            if (inputOne == inputTwo)
-            {
-                inputs = true;
-            }
-            else { inputs = false; }
+        //    for (int i = 0; i < userTwoInput.Length; i++)
+        //    {
+        //        Console.WriteLine("Please enter a number");
+        //        userTwoInput[i] = int.Parse(Console.ReadLine());
+        //    }
 
-            return inputs;
+        //    bool result = Equality(userTwoInput[0], userTwoInput[1]);
+
+        //    Console.WriteLine(result);
+
+        //}
+
+        //static bool Equality(int inputOne, int inputTwo)
+        //{
+        //    bool inputs;
+
+        //    if (inputOne == inputTwo)
+        //    {
+        //        inputs = true;
+        //    }
+        //    else { inputs = false; }
+
+        //    return inputs;
             //}
 
             //    //3 Method which takes in three user favorite foods and returns and prints the three foods in one sentence. Use a loop to receive user inputs.
@@ -247,7 +247,7 @@ namespace PracticeProblems
             //    string foodSentence = "My favorite foods are " + food1 + ", " + food2 + ", and " + food3;
 
             //    return foodSentence;
-        }
+        //}
         
     }
 }
