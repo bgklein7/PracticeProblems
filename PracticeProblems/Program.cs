@@ -151,32 +151,103 @@ namespace PracticeProblems
             //    }
             //}
 
-            int[] userNum = new int[10];
+            //int[] userNum = new int[10];
 
-            int sum = 0; //for second solution to problem, ie not needed in first solution
+            //int sum = 0; //for second solution to problem, ie not needed in first solution
 
-            for (int i = 0; i < userNum.Length; i++)
+            //for (int i = 0; i < userNum.Length; i++)
+            //{
+            //    Console.WriteLine("Please enter a whole number " + i);
+            //    userNum[i] = int.Parse(Console.ReadLine());
+
+
+            ////int sum = userNum[1] + userNum[2]+ userNum[3]+ userNum[4] + userNum[5] + userNum[6] + userNum[7] + userNum[8] + userNum[9] + userNum[10];
+            //sum += userNum[i];
+            //}
+            //Console.WriteLine(sum);
+
+            //if (sum % 2 == 0)
+            //{
+            //    Console.WriteLine("even");
+            //}
+
+            //else
+            //{
+            //    Console.WriteLine("odd");
+            //}
+
+            //    //method which uses two user inputs and returns the greatest. Use loop to receive user input.
+            //    int[] userInput = new int[2];
+
+            //    for (int i = 0; i < userInput.Length; i++)
+            //    {
+            //        Console.WriteLine("Please enter a number");
+            //        userInput[i] = int.Parse(Console.ReadLine());
+            //    }
+
+            //    int greatest = Great(userInput[1], userInput[2]);
+
+            //    Console.WriteLine(greatest);
+            //}
+            //static int Great(int numOne, int numTwo)
+            //{
+            //    if (numOne < numTwo) { return numTwo; }
+            //    else { return numOne; }
+
+            //}
+
+            //2 Method which uses two user inputs and returns if they are equal. Use a loop to receive user input.
+            int[] user2Input = new int[2];
+
+            for (int i = 0; i < user2Input.Length; i++)
             {
-                Console.WriteLine("Please enter a whole number " + i);
-                userNum[i] = int.Parse(Console.ReadLine());
-
-            
-            //int sum = userNum[1] + userNum[2]+ userNum[3]+ userNum[4] + userNum[5] + userNum[6] + userNum[7] + userNum[8] + userNum[9] + userNum[10];
-            sum += userNum[i];
-            }
-            Console.WriteLine(sum);
-
-            if (sum % 2 == 0)
-            {
-                Console.WriteLine("even");
+                Console.WriteLine("Please enter a number");
+                user2Input[i] = int.Parse(Console.ReadLine());
             }
 
-            else
-            {
-                Console.WriteLine("odd");
-            }
+            bool result = Equality(user2Input[1], user2Input[2]);
 
-            
+            Console.WriteLine(result);
+
         }
+
+        static bool Equality(int inputOne, int inputTwo)
+        {
+            bool inputs;
+
+            if (inputOne == inputTwo)
+            {
+                inputs = true;
+            }
+            else { inputs = false; }
+
+            return inputs;
+            //}
+
+            //    //3 Method which takes in three user favorite foods and returns and prints the three foods in one sentence. Use a loop to receive user inputs.
+
+            //    string[] favFoods = new string[3];
+
+            //    for (int i = 0; i < favFoods.Length; i++)
+            //    {
+
+            //        Console.WriteLine("Please enter one of your favorite foods");
+            //        favFoods[i] = Console.ReadLine();
+            //    }
+
+            //    string sentence = Grammar(favFoods[0], favFoods[1], favFoods[2]);
+
+            //    Console.WriteLine(sentence);
+
+
+            //}
+
+            //static string Grammar(string food1, string food2, string food3)
+            //{
+            //    string foodSentence = "My favorite foods are " + food1 + ", " + food2 + ", and " + food3;
+
+            //    return foodSentence;
+        }
+        
     }
 }
